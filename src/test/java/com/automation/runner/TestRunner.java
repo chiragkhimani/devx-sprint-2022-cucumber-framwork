@@ -8,7 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src//test//resources//features",
         glue = "com.automation.stepdef",
-        tags = "@smoke and @chirag"
+        dryRun = true,
+        tags = "@wip",
+        plugin = {"html:target/cucumber-html-report.html","json:target/cucumber.json"}
 )
 public class TestRunner {
 
